@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>31Oct2022 CSS FORM Design #1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <style>
       body {
         background: #f3e0e2;
@@ -21,6 +29,7 @@
         overflow: hidden;
         box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.3);
         clear: both;
+        text-align: center;
       }
       form.myform > div {
         width: 50%;
@@ -34,16 +43,72 @@
       .right {
         background-image: -webkit-linear-gradient(left, #ff464c, #ff416b);
         color: white;
-        text-align: center;
+
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      }
+      .icons {
+        width: 40px;
+        height: 40px;
+
+        line-height: 40px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid #303030;
+        color: #303030;
+        font-size: 1.2em;
+      }
+      .myform input[type="text"],
+      .myform input[type="password"] {
+        width: 97%;
+        /* padding: TRBL; */
+        padding: 10px 0px 10px 10px;
+        margin: 5px 0px;
+        border: none;
+        background: #efefef;
+      }
+      /* .myform input:focus {
+        border: none !;
+      } */
+      .myform input[type="submit"] {
+        background: #ff4a27;
+        color: #fff;
+        border: none;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      .forget {
+        color: #303030;
+        text-decoration: none;
       }
     </style>
   </head>
   <body>
     <form class="myform">
-      <div class="left">1</div>
+      <div class="left">
+        <div style="margin: 60px 60px">
+          <h1>Login</h1>
+          <a href="#" class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="icons">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <p>or use your account</p>
+          <input type="text" placeholder="Email" name="email" />
+          <input type="Password" placeholder="Password" name="password" />
+          <div style="margin: 20px 0px">
+            <a href="#" class="forget">Forget your Password?</a>
+          </div>
+
+          <div>
+            <input type="submit" value="LOG IN" name="submit" />
+          </div>
+        </div>
+      </div>
       <div class="right">
-        <div style="margin: 150px 70px">
+        <div style="margin: 130px 60px">
           <h1>HTML CSS LOGIN FORM</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
@@ -53,5 +118,11 @@
         </div>
       </div>
     </form>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
